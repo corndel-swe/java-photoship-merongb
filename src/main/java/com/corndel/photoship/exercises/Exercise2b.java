@@ -19,6 +19,6 @@ public class Exercise2b {
    */
   public static List<Double> convertFilesizes(List<Double> files) {
     // TODO
-    return files.stream().map(file -> file / 1000).collect(Collectors.toCollection(ArrayList::new));
+    return files.stream().map(file -> file / 1000).toList();
   }
 }
