@@ -22,6 +22,8 @@ public class Converter {
 
     public void saveImage() throws IOException {
         ImageIO.write(this.image, "jpg", new File(String.format("src/main/resources/img/%s-output.jpg", String.valueOf(this.filename).substring(0, this.filename.length() - 4))));
+        System.out.println(String.format("Great! Output is saved in img/%s-output.jpg", this.filename.substring(0, this.filename.length() - 4)));
+
     }
 
     public void applyFilter(PixelFilter filter) {
