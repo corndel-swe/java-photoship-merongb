@@ -17,6 +17,6 @@ public class Exercise2a {
    */
   public static <T> List<T> getMiddle(List<T> list) {
     // TODO
-    return null;
+    return list.subList(1, list.size() - 1);
   }
 }
