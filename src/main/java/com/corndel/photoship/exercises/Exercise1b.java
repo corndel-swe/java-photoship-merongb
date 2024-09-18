@@ -16,6 +16,8 @@ public class Exercise1b {
    */
   public static <T> List<T> arrayRotate(List<T> list) {
     // TODO
-    return null;
+    var x = list.remove(list.size() - 1);
+    list.add(0, x);
+    return list;
   }
 }

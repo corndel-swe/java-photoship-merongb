@@ -14,6 +14,6 @@ public class Exercise1a {
    */
   public static int firstAddLast(int[] nums) {
     // TODO
-    return 1;
+    return nums[0] + nums[nums.length - 1];
   }
 }
